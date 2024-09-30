@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="City">
+    <item>Select Cite</item>
+    <item>Mogadishu</item>
+    <item>Hargeisa</item>
+    <item>Bosaso</item>
+    <item>Burco</item>
+    <item>Baydhabo</item>
+    <item>Jowhar</item>
+    <item>Borama</item>
+    <item>Marka</item>
+    <item>Kismayo</item>
+    <item>Beledweyne</item>
+    <item>Galkaio</item>
+    <item>Erigavo</item>
+    <item>Jilib</item>
+    <item>Bardera</item>
+    <item>Hudur</item>
+    <item>Dhuusamareeb</item>
+    <item>Las Anod</item>
+    <item>Garoowe</item>
+    <item>Garbahare</item>
+    </string-array>
+
+    <string-array name="Restaurants">
+    <item>Fast Food</item>
+    <item>Somali Restaurants</item>
+    <item>Arab Restaurants</item>
+    <item>Home Made</item>
+    </string-array>
+
+</resources>
+

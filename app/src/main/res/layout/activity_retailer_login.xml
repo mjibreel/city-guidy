@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/googelfacebook"
+    android:padding="30dp"
+    android:transitionName="transition_login"
+    tools:context=".Common.LoginSignUp.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+     <!--   <ImageView
+            android:id="@+id/login_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo4"/>
+<!--
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:transitionName="transition_login_btn" />
+        </RelativeLayout>
+-->
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/username_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/username"
+            android:textColorHint="@color/black"
+            android:transitionName="username_text"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/user_96px"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_login"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:transitionName="password_text"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/lock_2_96px"
+            app:startIconTint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/check_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:buttonTint="@color/black"
+                android:text="@string/remember_me"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/forget_password_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="#00000000"
+                android:onClick="callForgetPasswordScreen"
+                android:text="@string/forget_password" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:onClick="LoginUser"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:transitionName="transition_login_btn" />
+
+<!--
+
+        <TextView
+            android:id="@+id/sign_in_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/sign_in_with"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+
+&lt;!&ndash;
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+          >
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebook_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp" />
+&lt;!&ndash;<Button&ndash;&gt;
+&lt;!&ndash;    android:id="@+id/facebook_sign_in_btn"&ndash;&gt;
+&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;
+&lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;
+&lt;!&ndash;    android:background="#3B5991"&ndash;&gt;
+&lt;!&ndash;    android:drawableStart="@drawable/ic_icons8_facebook"&ndash;&gt;
+&lt;!&ndash;    android:paddingEnd="20dp"&ndash;&gt;
+&lt;!&ndash;    android:layout_marginBottom="20dp"&ndash;&gt;
+&lt;!&ndash;    android:paddingStart="20dp"&ndash;&gt;
+&lt;!&ndash;android:text="log in with Facebook"&ndash;&gt;
+&lt;!&ndash;    android:textAllCaps="false"&ndash;&gt;
+&lt;!&ndash;    android:textColor="#ffffff"&ndash;&gt;
+&lt;!&ndash;    android:textSize="15sp"&ndash;&gt;
+&lt;!&ndash;    android:textStyle="bold"/>&ndash;&gt;
+        &lt;!&ndash;    <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_sign_in"
+                android:layout_width="187dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center" />&ndash;&gt;
+
+            <Button
+                android:id="@+id/google_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#E1CDCD"
+                android:drawableStart="@drawable/google"
+                android:drawableLeft="@drawable/google"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="log in with Google"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"/>
+        </LinearLayout>
+&ndash;&gt;
+
+
+        <Button
+            android:id="@+id/create_account_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#00000000"
+            android:onClick="toSignUpScreen"
+            android:text="Don't have an a account? Sign in"
+            android:textColor="@color/black"
+            android:transitionName="transition_sing_up_btn" />
+-->
+
+    </LinearLayout>
+
+</ScrollView>

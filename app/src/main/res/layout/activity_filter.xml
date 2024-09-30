@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilterRestaurants">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Filter"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:text="Sort By"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/top_bottom"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:checkable="true"
+            android:text="Top-Bottom"
+            android:textAlignment="center"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/bottom_top"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Bottom-Top"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:text="City"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:checkable="true"
+            android:text="Mogadishu"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Hargeisa"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi3"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Bosaso"
+            android:textAlignment="center"
+
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Burco"
+            android:textAlignment="center"
+
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi5"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Baydhabo"
+            android:textAlignment="center"
+
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi6"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Jowhar"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi7"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Borama"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi8"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Marka"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi9"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Kismayo"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi10"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Beledweyne"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi11"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Galkaio"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi12"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Erigavo"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi13"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Jilib"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi14"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Bardera"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi15"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Hudur"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi16"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Dhuusamareeb"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi17"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Las Anod"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi18"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Garoowe"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/citi19"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Garbahare"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:paddingTop="10dp"
+        android:text="Category"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+android:padding="30dp"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/food1"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:checkable="true"
+            android:text="Fast Food"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/food2"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#00000000"
+            android:text="Somali Restaurants"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/food3"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Arab Restaurants"
+            android:textAlignment="center"
+
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/food4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:text="Home Made"
+            android:textAlignment="center"
+            android:theme="@style/Theme.MaterialComponents.Light" />
+
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <Button
+        android:id="@+id/submit_filter_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Button"
+        android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/res_drawer_Layout"
+    android:background="@color/home_background"
+    tools:context=".LocationOuner.Restaurants">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/res_design_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/lightWhite"
+        android:theme="@style/navTheme"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu">
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+    <LinearLayout
+        android:id="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/menu_icon" />
+
+            <TextView
+                android:id="@+id/logo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Somalia Guidy"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/add_post_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="49dp"
+                android:layout_toEndOf="@+id/logo_name"
+                android:background="@drawable/add_button_background"
+                android:onClick="callAddScreen"
+                android:padding="5dp"
+                android:src="@drawable/add_icon" />
+
+        </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/search"
+                                android:layout_width="320dp"
+                                android:layout_height="40dp"
+                             android:layout_gravity="center"
+                                android:drawableStart="@drawable/search_icon"
+                                android:drawablePadding="20dp"
+                                android:hint="@string/search_hint"
+                                android:layout_marginBottom="20dp"
+                                android:screenReaderFocusable="true"
+                                android:background="@color/lightWhite"
+                                android:elevation="8dp"/>
+
+  <!--  <ImageView
+        android:id="@+id/add_post_filter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/search"
+        android:background="@color/banner_background"
+        android:padding="5dp"
+        android:src="@drawable/filter_icon" />-->
+
+</RelativeLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:nestedScrollingEnabled="false"
+                        android:id="@+id/add_list_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/progress_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_corners"
+            android:elevation="8dp"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarStyle="outsideOverlay"
+            app:cnb_menuResource="@menu/bottom_nav_menu"
+            app:cnb_orientationMode="horizontal"
+            app:cnb_radius="8dp"
+            app:cnb_unselectedColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+    </LinearLayout>
+-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_post_filter"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/banner_background"
+            android:src="@drawable/filter_icon"
+            app:fabSize="normal" />
+
+        <ImageView
+            android:id="@+id/scrollUp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrou"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/arrow_up"
+            />
+    </RelativeLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

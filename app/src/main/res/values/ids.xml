@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <item name="sign_in" type="id" />
+    <item name="email_login" type="id" />
+    <item name="facebook_sign_in_btn" type="id" />
+    <item name="google_sign_in" type="id" />
+</resources>

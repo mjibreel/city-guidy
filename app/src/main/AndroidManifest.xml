@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cityguidy">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Settings"></activity>
+        <activity
+            android:name=".Map.LocationPickerActivity"
+            android:theme="@style/PlacePickerTheme" />
+        <activity
+            android:name=".PlacePickerActivity"
+            android:theme="@style/PlacePickerTheme" />
+        <activity android:name=".pickPlace.PickPlace" />
+        <activity android:name=".Common.LoginSignUp.FaceGoogleLogin" />
+        <activity android:name=".FilterRestaurants" />
+        <activity android:name=".AddNew.AddNewShop" />
+        <activity android:name=".AddNew.addNewElectronics" />
+        <activity android:name=".LocationOuner.Electronics" />
+        <activity android:name=".LocationOuner.Shop" />
+        <activity android:name=".User.CommentList" />
+        <activity android:name=".LocationOuner.FavoriteItem" />
+        <activity android:name=".User.AddListProfileUpdate" />
+        <activity android:name=".AddNew.AddNewHouse" />
+        <activity android:name=".AddNew.AddNewRestaurants" />
+        <activity android:name=".AddNew.AddNewHotel" />
+        <activity android:name=".AddNew.AddNewHospital" />
+        <!--
+  <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name=".AddNew.AddNewCar" />
+        <activity android:name=".AddNew.AddNewBank" />
+        <activity android:name=".User.AddListProfile" />
+        <activity android:name=".LocationOuner.AddList" />
+        <activity android:name=".AddNew.AddUpdate" />
+        <activity android:name=".LocationOuner.House" />
+        <activity android:name=".LocationOuner.Bank" />
+        <activity android:name=".LocationOuner.Hospital" />
+        <activity android:name=".LocationOuner.Car" />
+        <activity android:name=".LocationOuner.Restaurants" />
+        <activity android:name=".LocationOuner.Hotel" />
+        <activity android:name=".User.Profile" />
+        <activity android:name=".Common.LoginSignUp.ForgetSuccessMessage" />
+        <activity android:name=".Common.LoginSignUp.Set_New_Password" />
+        <activity android:name=".Common.LoginSignUp.MakeSelection" />
+        <activity android:name=".Common.LoginSignUp.ForgetPassword" />
+        <activity android:name=".Common.LoginSignUp.VerityOTP" />
+        <activity android:name=".Common.LoginSignUp.SignUp" />
+        <activity android:name=".Common.LoginSignUp.Signup" />
+        <activity android:name=".Common.LoginSignUp.Login" />
+        <activity android:name=".Common.LoginSignUp.Retailer_start_up_screen" />
+        <activity android:name=".User.AllCategories" />
+        <activity android:name=".Common.OnBoarding" />
+        <activity android:name=".User.UserDashboard" />
+        <activity android:name=".Common.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/places_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

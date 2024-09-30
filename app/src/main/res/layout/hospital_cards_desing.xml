@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/hospital_image"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/my_pic" />
+
+        <TextView
+            android:id="@+id/hospital_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/hospital_image"
+            android:text="My Pic"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <RatingBar
+            android:id="@+id/hospital_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospital_title"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/hospital_image"
+            android:rating="4" />
+
+        <TextView
+            android:id="@+id/hospital_desc"
+            tools:ignore="UnknownId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospital_rating"
+            android:layout_alignBottom="@id/hospital_rating"
+            android:layout_toEndOf="@id/hospital_image"
+            android:padding="10dp"
+            android:text="You can search any place nearby or with-in the specified city" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

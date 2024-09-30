@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationOuner.Hotel">
+
+
+    <LinearLayout
+        android:id="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/home_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/add_ist_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/logo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/logo_name"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="40dp"
+              android:layout_marginRight="40dp"
+              android:layout_marginBottom="20dp"
+              android:background="@color/lightWhite"
+              android:elevation="8dp">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="15dp"
+                  android:text="@string/search_text"
+                  android:textSize="20sp" />
+
+              <ImageView
+                  android:layout_width="30dp"
+                  android:layout_height="30dp"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="15dp"
+                  android:src="@drawable/search_icon" />
+
+          </RelativeLayout>-->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarTrackHorizontal="@color/home_background"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Filter"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:singleLine="true"
+                    android:layout_margin="5dp"
+                    >
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/city_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:checkable="true"
+                        android:text="City"
+                        android:textAlignment="center"
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/buy_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:text="Buy"
+
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/rent_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:text="Rent"
+
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sale_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:text="Sale"
+
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sale_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:text="Sale"
+
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sale_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:text="Sale"
+
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/sale_filter"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="#00000000"
+                        android:text="Sale"
+                        android:theme="@style/Theme.MaterialComponents.Light" />
+                </com.google.android.material.chip.ChipGroup>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                >
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/add_list_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/progress_circular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_corners"
+            android:elevation="8dp"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbarStyle="outsideOverlay"
+            app:cnb_menuResource="@menu/bottom_nav_menu"
+            app:cnb_orientationMode="horizontal"
+            app:cnb_radius="8dp"
+            app:cnb_unselectedColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

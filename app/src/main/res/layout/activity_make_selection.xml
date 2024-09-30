@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    tools:context=".Common.LoginSignUp.MakeSelection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/muli_black"
+            android:text="@string/make_selection"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/muli_extralight"
+            android:text="@string/make_selection_detail" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/cell_phone_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/cell_phone_icon" />
+
+            <TextView
+                android:id="@+id/sms_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/via_sms"
+                android:layout_toRightOf="@id/cell_phone_icon"
+                android:textSize="30sp"
+                android:layout_marginTop="35dp"
+                android:layout_toEndOf="@id/cell_phone_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+25209666666"
+                android:layout_toRightOf="@id/cell_phone_icon"
+                android:layout_below="@id/sms_title"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/cell_phone_icon" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/flag_transparent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/lightWhite"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:padding="10dp"
+                android:src="@drawable/mail_icon" />
+
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/via_email"
+                android:layout_toRightOf="@id/email_icon"
+                android:textSize="30sp"
+                android:layout_marginTop="35dp" />
+
+            <TextView
+                android:id="@+id/email_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/via_email_support"
+                android:layout_toRightOf="@id/email_icon"
+                android:layout_below="@id/email_title"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/email_icon" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/flag_transparent"/>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,780 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.cityguidy"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:5:5-81
+11-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:7:5-65
+13-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+14-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:8:5-76
+14-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+15-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:9:5-76
+15-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:9:22-73
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:12:5-80
+18-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:12:22-77
+19
+20    <uses-feature
+20-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:11:5-13:35
+21        android:glEsVersion="0x00020000"
+21-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:12:9-41
+22        android:required="true" />
+22-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:13:9-32
+23
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+24-->[com.github.shivpujan12:LocationPicker:2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\073dc085a6bac63d524b82cc28b15821\jetified-LocationPicker-2.0\AndroidManifest.xml:14:5-79
+24-->[com.github.shivpujan12:LocationPicker:2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\073dc085a6bac63d524b82cc28b15821\jetified-LocationPicker-2.0\AndroidManifest.xml:14:22-76
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.android.gms:play-services-gcm:17.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\de2fe4b4fa244abd7c7db76d9e8b28dd\jetified-play-services-gcm-17.0.0\AndroidManifest.xml:23:5-82
+25-->[com.google.android.gms:play-services-gcm:17.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\de2fe4b4fa244abd7c7db76d9e8b28dd\jetified-play-services-gcm-17.0.0\AndroidManifest.xml:23:22-79
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:25:5-68
+26-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:25:22-65
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:26:22-107
+28
+29    <application
+29-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:14:5-98:19
+30        android:allowBackup="true"
+30-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:15:9-35
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\36e1311a3a89483ca72bc1b1421c9269\core-1.3.1\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:extractNativeLibs="false"
+34        android:icon="@mipmap/ic_launcher"
+34-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:16:9-43
+35        android:label="@string/app_name"
+35-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:17:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:18:9-54
+37        android:supportsRtl="true"
+37-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:19:9-35
+38        android:testOnly="true"
+39        android:theme="@style/AppTheme" >
+39-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:20:9-40
+40        <activity
+40-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:23:9-24:54
+41            android:name="com.example.cityguidy.Map.LocationPickerActivity"
+41-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:23:19-61
+42            android:theme="@style/PlacePickerTheme" />
+42-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:24:13-52
+43        <activity
+43-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:25:9-27:55
+44            android:name="com.example.cityguidy.PlacePickerActivity"
+44-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:26:13-48
+45            android:theme="@style/PlacePickerTheme" />
+45-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:27:13-52
+46        <activity android:name="com.example.cityguidy.pickPlace.PickPlace" />
+46-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:28:9-57
+46-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:28:19-54
+47        <activity android:name="com.example.cityguidy.Common.LoginSignUp.FaceGoogleLogin" />
+47-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:29:9-72
+47-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:29:19-69
+48        <activity android:name="com.example.cityguidy.FilterRestaurants" />
+48-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:30:9-55
+48-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:30:19-52
+49        <activity android:name="com.example.cityguidy.AddNew.AddNewShop" />
+49-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:31:9-55
+49-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:31:19-52
+50        <activity android:name="com.example.cityguidy.AddNew.addNewElectronics" />
+50-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:32:9-62
+50-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:32:19-59
+51        <activity android:name="com.example.cityguidy.LocationOuner.Electronics" />
+51-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:33:9-63
+51-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:33:19-60
+52        <activity android:name="com.example.cityguidy.LocationOuner.Shop" />
+52-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:34:9-56
+52-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:34:19-53
+53        <activity android:name="com.example.cityguidy.User.CommentList" />
+53-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:35:9-54
+53-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:35:19-51
+54        <activity android:name="com.example.cityguidy.LocationOuner.FavoriteItem" />
+54-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:36:9-64
+54-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:36:19-61
+55        <activity android:name="com.example.cityguidy.User.AddListProfileUpdate" />
+55-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:37:9-63
+55-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:37:19-60
+56        <activity android:name="com.example.cityguidy.AddNew.AddNewHouse" />
+56-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:38:9-56
+56-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:38:19-53
+57        <activity android:name="com.example.cityguidy.AddNew.AddNewRestaurants" />
+57-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:39:9-62
+57-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:39:19-59
+58        <activity android:name="com.example.cityguidy.AddNew.AddNewHotel" />
+58-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:40:9-56
+58-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:40:19-53
+59        <activity android:name="com.example.cityguidy.AddNew.AddNewHospital" />
+59-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:41:9-59
+59-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:41:19-56
+60        <!--
+61  <activity
+62            android:name="com.facebook.FacebookActivity"
+63            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+64            android:label="@string/app_name" />
+65        <activity
+66            android:name="com.facebook.CustomTabActivity"
+67            android:exported="true">
+68            <intent-filter>
+69                <action android:name="android.intent.action.VIEW" />
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+72                <category android:name="android.intent.category.BROWSABLE" />
+73
+74                <data android:scheme="@string/fb_login_protocol_scheme" />
+75            </intent-filter>
+76        </activity>
+77        -->
+78        <activity android:name="com.example.cityguidy.AddNew.AddNewCar" />
+78-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:60:9-54
+78-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:60:19-51
+79        <activity android:name="com.example.cityguidy.AddNew.AddNewBank" />
+79-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:61:9-55
+79-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:61:19-52
+80        <activity android:name="com.example.cityguidy.User.AddListProfile" />
+80-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:62:9-57
+80-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:62:19-54
+81        <activity android:name="com.example.cityguidy.LocationOuner.AddList" />
+81-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:63:9-59
+81-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:63:19-56
+82        <activity android:name="com.example.cityguidy.AddNew.AddUpdate" />
+82-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:64:9-54
+82-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:64:19-51
+83        <activity android:name="com.example.cityguidy.LocationOuner.House" />
+83-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:65:9-57
+83-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:65:19-54
+84        <activity android:name="com.example.cityguidy.LocationOuner.Bank" />
+84-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:66:9-56
+84-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:66:19-53
+85        <activity android:name="com.example.cityguidy.LocationOuner.Hospital" />
+85-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:67:9-60
+85-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:67:19-57
+86        <activity android:name="com.example.cityguidy.LocationOuner.Car" />
+86-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:68:9-55
+86-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:68:19-52
+87        <activity android:name="com.example.cityguidy.LocationOuner.Restaurants" />
+87-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:69:9-63
+87-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:69:19-60
+88        <activity android:name="com.example.cityguidy.LocationOuner.Hotel" />
+88-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:70:9-57
+88-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:70:19-54
+89        <activity android:name="com.example.cityguidy.User.Profile" />
+89-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:71:9-50
+89-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:71:19-47
+90        <activity android:name="com.example.cityguidy.Common.LoginSignUp.ForgetSuccessMessage" />
+90-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:72:9-77
+90-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:72:19-74
+91        <activity android:name="com.example.cityguidy.Common.LoginSignUp.Set_New_Password" />
+91-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:73:9-73
+91-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:73:19-70
+92        <activity android:name="com.example.cityguidy.Common.LoginSignUp.MakeSelection" />
+92-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:74:9-70
+92-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:74:19-67
+93        <activity android:name="com.example.cityguidy.Common.LoginSignUp.ForgetPassword" />
+93-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:75:9-71
+93-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:75:19-68
+94        <activity android:name="com.example.cityguidy.Common.LoginSignUp.VerityOTP" />
+94-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:76:9-66
+94-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:76:19-63
+95        <activity android:name="com.example.cityguidy.Common.LoginSignUp.SignUp" />
+95-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:77:9-63
+95-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:77:19-60
+96        <activity android:name="com.example.cityguidy.Common.LoginSignUp.Signup" />
+96-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:78:9-63
+96-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:78:19-60
+97        <activity android:name="com.example.cityguidy.Common.LoginSignUp.Login" />
+97-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:79:9-62
+97-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:79:19-59
+98        <activity android:name="com.example.cityguidy.Common.LoginSignUp.Retailer_start_up_screen" />
+98-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:80:9-81
+98-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:80:19-78
+99        <activity android:name="com.example.cityguidy.User.AllCategories" />
+99-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:81:9-56
+99-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:81:19-53
+100        <activity android:name="com.example.cityguidy.Common.OnBoarding" />
+100-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:82:9-55
+100-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:82:19-52
+101        <activity android:name="com.example.cityguidy.User.UserDashboard" />
+101-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:83:9-56
+101-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:83:19-53
+102        <activity android:name="com.example.cityguidy.Common.SplashScreen" >
+102-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:84:9-90:20
+102-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:84:19-54
+103            <intent-filter>
+103-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:85:13-89:29
+104                <action android:name="android.intent.action.MAIN" />
+104-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:86:17-69
+104-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:86:25-66
+105
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:88:17-77
+106-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:88:27-74
+107            </intent-filter>
+108        </activity>
+109
+110        <meta-data
+110-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:92:9-94:54
+111            android:name="com.google.android.geo.API_KEY"
+111-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:93:13-58
+112            android:value="@string/places_api_key" />
+112-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:94:13-51
+113        <meta-data
+113-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:95:9-97:69
+114            android:name="com.google.android.gms.version"
+114-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:96:13-58
+115            android:value="@integer/google_play_services_version" />
+115-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:97:13-66
+116
+117        <provider
+117-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:14:9-22:20
+118            android:name="androidx.core.content.FileProvider"
+118-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:15:13-62
+119            android:authorities="com.example.cityguidy.provider"
+119-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:16:13-60
+120            android:exported="false"
+120-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:17:13-37
+121            android:grantUriPermissions="true" >
+121-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:18:13-47
+122            <meta-data
+122-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:19:13-21:58
+123                android:name="android.support.FILE_PROVIDER_PATHS"
+123-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:20:17-67
+124                android:resource="@xml/provider_paths" />
+124-->[gun0912.ted:tedbottompicker:2.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\cade0d3849b5cea9c74bf85e66aaa60f\jetified-tedbottompicker-2.0.1\AndroidManifest.xml:21:17-55
+125        </provider>
+126
+127        <activity
+127-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:20:9-23:57
+128            android:name="com.rtchagas.pingplacepicker.ui.PlacePickerActivity"
+128-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:21:13-79
+129            android:launchMode="singleTop"
+129-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:22:13-43
+130            android:theme="@style/PingTheme.NoStatus" />
+130-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:23:13-54
+131
+132        <uses-library
+132-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:25:9-27:40
+133            android:name="org.apache.http.legacy"
+133-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:26:13-50
+134            android:required="false" />
+134-->[com.github.rtchagas:pingplacepicker:2.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1660e7de4ca1bd4b3626e6f660645c29\jetified-pingplacepicker-2.0.6\AndroidManifest.xml:27:13-37
+135
+136        <activity
+136-->[com.karumi:dexter:6.2.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e0126f9dc33977ac3f1558e3a5d71a66\jetified-dexter-6.2.2\AndroidManifest.xml:27:9-29:72
+137            android:name="com.karumi.dexter.DexterActivity"
+137-->[com.karumi:dexter:6.2.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e0126f9dc33977ac3f1558e3a5d71a66\jetified-dexter-6.2.2\AndroidManifest.xml:28:13-60
+138            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+138-->[com.karumi:dexter:6.2.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e0126f9dc33977ac3f1558e3a5d71a66\jetified-dexter-6.2.2\AndroidManifest.xml:29:13-69
+139        <activity
+139-->[com.github.shivpujan12:LocationPicker:2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\073dc085a6bac63d524b82cc28b15821\jetified-LocationPicker-2.0\AndroidManifest.xml:17:9-19:71
+140            android:name="com.shivtechs.maplocationpicker.LocationPickerActivity"
+140-->[com.github.shivpujan12:LocationPicker:2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\073dc085a6bac63d524b82cc28b15821\jetified-LocationPicker-2.0\AndroidManifest.xml:18:13-82
+141            android:windowSoftInputMode="stateVisible|adjustResize" />
+141-->[com.github.shivpujan12:LocationPicker:2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\073dc085a6bac63d524b82cc28b15821\jetified-LocationPicker-2.0\AndroidManifest.xml:19:13-68
+142        <activity
+142-->[gun0912.ted:tedpermission:2.2.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e62d38bbe7b778ae6a5f7b6212dab684\jetified-tedpermission-2.2.3\AndroidManifest.xml:10:9-14:67
+143            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+143-->[gun0912.ted:tedpermission:2.2.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e62d38bbe7b778ae6a5f7b6212dab684\jetified-tedpermission-2.2.3\AndroidManifest.xml:11:13-75
+144            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+144-->[gun0912.ted:tedpermission:2.2.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e62d38bbe7b778ae6a5f7b6212dab684\jetified-tedpermission-2.2.3\AndroidManifest.xml:12:13-144
+145            android:screenOrientation="unspecified"
+145-->[gun0912.ted:tedpermission:2.2.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e62d38bbe7b778ae6a5f7b6212dab684\jetified-tedpermission-2.2.3\AndroidManifest.xml:13:13-52
+146            android:theme="@style/Theme.Transparent.Permission" />
+146-->[gun0912.ted:tedpermission:2.2.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e62d38bbe7b778ae6a5f7b6212dab684\jetified-tedpermission-2.2.3\AndroidManifest.xml:14:13-64
+147        <activity
+147-->[com.google.android.libraries.places:places:2.4.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\853292b3f8326015d0ea58b71b5672a2\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20
+148            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+148-->[com.google.android.libraries.places:places:2.4.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\853292b3f8326015d0ea58b71b5672a2\jetified-places-2.4.0\AndroidManifest.xml:15:13-91
+149            android:exported="false"
+149-->[com.google.android.libraries.places:places:2.4.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\853292b3f8326015d0ea58b71b5672a2\jetified-places-2.4.0\AndroidManifest.xml:16:13-37
+150            android:label="@string/places_autocomplete_label"
+150-->[com.google.android.libraries.places:places:2.4.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\853292b3f8326015d0ea58b71b5672a2\jetified-places-2.4.0\AndroidManifest.xml:17:13-62
+151            android:theme="@style/PlacesAutocompleteOverlay"
+151-->[com.google.android.libraries.places:places:2.4.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\853292b3f8326015d0ea58b71b5672a2\jetified-places-2.4.0\AndroidManifest.xml:18:13-61
+152            android:windowSoftInputMode="adjustResize" >
+152-->[com.google.android.libraries.places:places:2.4.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\853292b3f8326015d0ea58b71b5672a2\jetified-places-2.4.0\AndroidManifest.xml:19:13-55
+153        </activity>
+154        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
+154-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\583db1a493e93358b43eb411b4362ab0\jetified-matisse-0.5.3-beta3\AndroidManifest.xml:28:9-73
+154-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\583db1a493e93358b43eb411b4362ab0\jetified-matisse-0.5.3-beta3\AndroidManifest.xml:28:19-70
+155        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+155-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\583db1a493e93358b43eb411b4362ab0\jetified-matisse-0.5.3-beta3\AndroidManifest.xml:29:9-87
+155-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\583db1a493e93358b43eb411b4362ab0\jetified-matisse-0.5.3-beta3\AndroidManifest.xml:29:19-84
+156        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+156-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\583db1a493e93358b43eb411b4362ab0\jetified-matisse-0.5.3-beta3\AndroidManifest.xml:30:9-90
+156-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\583db1a493e93358b43eb411b4362ab0\jetified-matisse-0.5.3-beta3\AndroidManifest.xml:30:19-87
+157        <activity
+157-->[gun0912.ted:tedonactivityresult:1.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e91f0263025760e3405d3b3135611a40\jetified-tedonactivityresult-1.0.6\AndroidManifest.xml:10:9-14:75
+158            android:name="com.gun0912.tedonactivityresult.ProxyActivity"
+158-->[gun0912.ted:tedonactivityresult:1.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e91f0263025760e3405d3b3135611a40\jetified-tedonactivityresult-1.0.6\AndroidManifest.xml:11:13-73
+159            android:configChanges="mcc|mnc|locale|keyboard|keyboardHidden|screenLayout|fontScale|uiMode|orientation|screenSize|layoutDirection"
+159-->[gun0912.ted:tedonactivityresult:1.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e91f0263025760e3405d3b3135611a40\jetified-tedonactivityresult-1.0.6\AndroidManifest.xml:12:13-144
+160            android:screenOrientation="unspecified"
+160-->[gun0912.ted:tedonactivityresult:1.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e91f0263025760e3405d3b3135611a40\jetified-tedonactivityresult-1.0.6\AndroidManifest.xml:13:13-52
+161            android:theme="@style/android:Theme.Translucent.NoTitleBar" />
+161-->[gun0912.ted:tedonactivityresult:1.0.6] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e91f0263025760e3405d3b3135611a40\jetified-tedonactivityresult-1.0.6\AndroidManifest.xml:14:13-72
+162        <activity
+162-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:30:9-33:66
+163            android:name="com.facebook.FacebookActivity"
+163-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:31:13-57
+164            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+164-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:32:13-96
+165            android:theme="@style/com_facebook_activity_theme" />
+165-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:33:13-63
+166        <activity android:name="com.facebook.CustomTabMainActivity" />
+166-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:9-71
+166-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:34:19-68
+167        <activity
+167-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:35:9-49:20
+168            android:name="com.facebook.CustomTabActivity"
+168-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:36:13-58
+169            android:exported="true" >
+169-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:37:13-36
+170            <intent-filter>
+170-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:39:13-48:29
+171                <action android:name="android.intent.action.VIEW" />
+171-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
+171-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
+172
+173                <category android:name="android.intent.category.DEFAULT" />
+173-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+173-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+174                <category android:name="android.intent.category.BROWSABLE" />
+174-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
+174-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
+175
+176                <data
+176-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
+177                    android:host="cct.com.example.cityguidy"
+177-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
+178                    android:scheme="fbconnect" />
+178-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
+179            </intent-filter>
+180        </activity>
+181
+182        <service
+182-->[com.google.firebase:firebase-database:19.6.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\76cb075abcc439cb8e319887e5de96c2\jetified-firebase-database-19.6.0\AndroidManifest.xml:29:9-35:19
+183            android:name="com.google.firebase.components.ComponentDiscoveryService"
+183-->[com.google.firebase:firebase-database:19.6.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\76cb075abcc439cb8e319887e5de96c2\jetified-firebase-database-19.6.0\AndroidManifest.xml:30:13-84
+184            android:directBootAware="true"
+184-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+185            android:exported="false" >
+185-->[com.google.firebase:firebase-database:19.6.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\76cb075abcc439cb8e319887e5de96c2\jetified-firebase-database-19.6.0\AndroidManifest.xml:31:13-37
+186            <meta-data
+186-->[com.google.firebase:firebase-database:19.6.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\76cb075abcc439cb8e319887e5de96c2\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
+187                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+187-->[com.google.firebase:firebase-database:19.6.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\76cb075abcc439cb8e319887e5de96c2\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
+188                android:value="com.google.firebase.components.ComponentRegistrar" />
+188-->[com.google.firebase:firebase-database:19.6.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\76cb075abcc439cb8e319887e5de96c2\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
+189            <meta-data
+189-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\ff7b4866ba812c518067381d3eab0aec\jetified-firebase-storage-19.2.1\AndroidManifest.xml:33:13-35:85
+190                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+190-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\ff7b4866ba812c518067381d3eab0aec\jetified-firebase-storage-19.2.1\AndroidManifest.xml:34:17-107
+191                android:value="com.google.firebase.components.ComponentRegistrar" />
+191-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\ff7b4866ba812c518067381d3eab0aec\jetified-firebase-storage-19.2.1\AndroidManifest.xml:35:17-82
+192            <meta-data
+192-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:39:13-41:85
+193                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+193-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:40:17-119
+194                android:value="com.google.firebase.components.ComponentRegistrar" />
+194-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:41:17-82
+195            <meta-data
+195-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:32:13-34:85
+196                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+196-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:33:17-96
+197                android:value="com.google.firebase.components.ComponentRegistrar" />
+197-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:34:17-82
+198            <meta-data
+198-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:77:13-79:85
+199                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+199-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:78:17-109
+200                android:value="com.google.firebase.components.ComponentRegistrar" />
+200-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:79:17-82
+201            <meta-data
+201-->[com.google.firebase:firebase-firestore:22.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1e8bb25b9359911de19d65eabd485776\jetified-firebase-firestore-22.0.1\AndroidManifest.xml:20:13-22:85
+202                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+202-->[com.google.firebase:firebase-firestore:22.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1e8bb25b9359911de19d65eabd485776\jetified-firebase-firestore-22.0.1\AndroidManifest.xml:21:17-111
+203                android:value="com.google.firebase.components.ComponentRegistrar" />
+203-->[com.google.firebase:firebase-firestore:22.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1e8bb25b9359911de19d65eabd485776\jetified-firebase-firestore-22.0.1\AndroidManifest.xml:22:17-82
+204            <meta-data
+204-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\d198eec805cc61c69c5cbc80189e2dc5\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:30:13-32:85
+205                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+205-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\d198eec805cc61c69c5cbc80189e2dc5\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:31:17-139
+206                android:value="com.google.firebase.components.ComponentRegistrar" />
+206-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\d198eec805cc61c69c5cbc80189e2dc5\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:32:17-82
+207            <meta-data
+207-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\d590283676c8cfa382e1ce1cd3f97e74\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:28:13-30:85
+208                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+208-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\d590283676c8cfa382e1ce1cd3f97e74\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:29:17-115
+209                android:value="com.google.firebase.components.ComponentRegistrar" />
+209-->[com.google.firebase:firebase-datatransport:17.0.10] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\d590283676c8cfa382e1ce1cd3f97e74\jetified-firebase-datatransport-17.0.10\AndroidManifest.xml:30:17-82
+210            <meta-data
+210-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4122f9af9d9657a113d1e2f33f6280c4\jetified-firebase-installations-16.3.5\AndroidManifest.xml:18:13-20:85
+211                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+211-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4122f9af9d9657a113d1e2f33f6280c4\jetified-firebase-installations-16.3.5\AndroidManifest.xml:19:17-127
+212                android:value="com.google.firebase.components.ComponentRegistrar" />
+212-->[com.google.firebase:firebase-installations:16.3.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4122f9af9d9657a113d1e2f33f6280c4\jetified-firebase-installations-16.3.5\AndroidManifest.xml:20:17-82
+213            <!--
+214                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+215                clients to use it as well, by defining this registrar in their own core/common library.
+216            -->
+217            <meta-data
+217-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+218                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+218-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+219                android:value="com.google.firebase.components.ComponentRegistrar" />
+219-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+220        </service>
+221
+222        <activity
+222-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+223            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+223-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+224            android:excludeFromRecents="true"
+224-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+225            android:exported="false"
+225-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+226            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+226-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+227        <!--
+228            Service handling Google Sign-In user revocation. For apps that do not integrate with
+229            Google Sign-In, this service will never be started.
+230        -->
+231        <service
+231-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+232            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+232-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+233            android:exported="true"
+233-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+234            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+234-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+235            android:visibleToInstantApps="true" />
+235-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\3ad24473e3cbc3edbc69b20098759787\jetified-play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+236
+237        <receiver
+237-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:29:9-33:20
+238            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+238-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:30:13-85
+239            android:enabled="true"
+239-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:31:13-35
+240            android:exported="false" >
+240-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:32:13-37
+241        </receiver>
+242
+243        <service
+243-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:35:9-38:40
+244            android:name="com.google.android.gms.measurement.AppMeasurementService"
+244-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:36:13-84
+245            android:enabled="true"
+245-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:37:13-35
+246            android:exported="false" />
+246-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:38:13-37
+247        <service
+247-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:39:9-43:72
+248            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+248-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:40:13-87
+249            android:enabled="true"
+249-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:41:13-35
+250            android:exported="false"
+250-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:42:13-37
+251            android:permission="android.permission.BIND_JOB_SERVICE" />
+251-->[com.google.android.gms:play-services-measurement:18.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6e08aeedceee89ca08762994658f519b\jetified-play-services-measurement-18.0.1\AndroidManifest.xml:43:13-69
+252        <!--
+253             FirebaseMessagingService performs security checks at runtime,
+254             but set to not exported to explicitly avoid allowing another app to call it.
+255        -->
+256        <service
+256-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:28:9-35:19
+257            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+257-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:29:13-82
+258            android:directBootAware="true"
+258-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:30:13-43
+259            android:exported="false" >
+259-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:31:13-37
+260            <intent-filter android:priority="-500" >
+260-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:32:13-34:29
+260-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:32:28-51
+261                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+261-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:33:17-78
+261-->[com.google.firebase:firebase-messaging:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dab340cc44c26783b017b79dfc84a9ff\jetified-firebase-messaging-21.0.1\AndroidManifest.xml:33:25-75
+262            </intent-filter>
+263        </service>
+264
+265        <receiver
+265-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:37:9-44:20
+266            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+266-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:38:13-78
+267            android:exported="true"
+267-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:39:13-36
+268            android:permission="com.google.android.c2dm.permission.SEND" >
+268-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:40:13-73
+269            <intent-filter>
+269-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:41:13-43:29
+270                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+270-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:42:17-81
+270-->[com.google.firebase:firebase-iid:21.0.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a20f9b97794f3eb9d618db087888e367\jetified-firebase-iid-21.0.1\AndroidManifest.xml:42:25-78
+271            </intent-filter>
+272        </receiver>
+273        <!--
+274         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+275         with the application context. This config is merged in with the host app's manifest,
+276         but there can only be one provider with the same authority activated at any given
+277         point; so if the end user has two or more different apps that use Facebook SDK, only the
+278         first one will be able to use the provider. To work around this problem, we use the
+279         following placeholder in the authority to identify each host application as if it was
+280         a completely different provider.
+281        -->
+282        <provider
+282-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:39:9-42:40
+283            android:name="com.facebook.internal.FacebookInitProvider"
+283-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:40:13-70
+284            android:authorities="com.example.cityguidy.FacebookInitProvider"
+284-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:41:13-72
+285            android:exported="false" />
+285-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:42:13-37
+286
+287        <receiver
+287-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:44:9-50:20
+288            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+288-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:45:13-86
+289            android:exported="false" >
+289-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:46:13-37
+290            <intent-filter>
+290-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:47:13-49:29
+291                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+291-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:17-95
+291-->[com.facebook.android:facebook-core:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\0c7fd186029a5415997f7baca4fcc7f9\jetified-facebook-core-8.1.0\AndroidManifest.xml:48:25-92
+292            </intent-filter>
+293        </receiver>
+294
+295        <activity
+295-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:27:9-44:20
+296            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+296-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:28:13-80
+297            android:excludeFromRecents="true"
+297-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:29:13-46
+298            android:exported="true"
+298-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:30:13-36
+299            android:launchMode="singleTask"
+299-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:31:13-44
+300            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+300-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:32:13-72
+301            <intent-filter>
+301-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:33:13-43:29
+302                <action android:name="android.intent.action.VIEW" />
+302-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
+302-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
+303
+304                <category android:name="android.intent.category.DEFAULT" />
+304-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+304-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+305                <category android:name="android.intent.category.BROWSABLE" />
+305-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
+305-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
+306
+307                <data
+307-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
+308                    android:host="firebase.auth"
+308-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
+309                    android:path="/"
+310                    android:scheme="genericidp" />
+310-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
+311            </intent-filter>
+312        </activity>
+313        <activity
+313-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:45:9-62:20
+314            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+314-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:46:13-79
+315            android:excludeFromRecents="true"
+315-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:47:13-46
+316            android:exported="true"
+316-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:48:13-36
+317            android:launchMode="singleTask"
+317-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:49:13-44
+318            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+318-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:50:13-72
+319            <intent-filter>
+319-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:51:13-61:29
+320                <action android:name="android.intent.action.VIEW" />
+320-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:17-69
+320-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:40:25-66
+321
+322                <category android:name="android.intent.category.DEFAULT" />
+322-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+322-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+323                <category android:name="android.intent.category.BROWSABLE" />
+323-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:17-78
+323-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:43:27-75
+324
+325                <data
+325-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:45:17-47:50
+326                    android:host="firebase.auth"
+326-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:46:21-56
+327                    android:path="/"
+328                    android:scheme="recaptcha" />
+328-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:47:21-47
+329            </intent-filter>
+330        </activity>
+331
+332        <service
+332-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:64:9-73:19
+333            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+333-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:65:13-101
+334            android:enabled="true"
+334-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:66:13-35
+335            android:exported="false" >
+335-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:67:13-37
+336            <intent-filter>
+336-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:68:13-72:29
+337                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+337-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:69:17-89
+337-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\2eb2b23a2c44f0df14f8bc14edb1a194\jetified-firebase-auth-20.0.2\AndroidManifest.xml:69:25-86
+338
+339                <category android:name="android.intent.category.DEFAULT" />
+339-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:17-76
+339-->[com.facebook.android:facebook-common:8.1.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\dea9a5f3b9e4f08a8fc2860c761f477a\jetified-facebook-common-8.1.0\AndroidManifest.xml:42:27-73
+340            </intent-filter>
+341        </service>
+342
+343        <activity
+343-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4b36964e51ef31a91e5f88b0498ad3d6\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+344            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+344-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4b36964e51ef31a91e5f88b0498ad3d6\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+345            android:exported="false"
+345-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4b36964e51ef31a91e5f88b0498ad3d6\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+346            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+346-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\4b36964e51ef31a91e5f88b0498ad3d6\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+347
+348        <provider
+348-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+349            android:name="com.google.firebase.provider.FirebaseInitProvider"
+349-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+350            android:authorities="com.example.cityguidy.firebaseinitprovider"
+350-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+351            android:directBootAware="true"
+351-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+352            android:exported="false"
+352-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+353            android:initOrder="100" />
+353-->[com.google.firebase:firebase-common:19.5.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\c991f07ed59879c7e4859e8cc46f1d1d\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+354        <provider
+354-->[com.squareup.picasso:picasso:2.71828] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1b9c88b2a9640e0830bba5248762bc95\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+355            android:name="com.squareup.picasso.PicassoProvider"
+355-->[com.squareup.picasso:picasso:2.71828] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1b9c88b2a9640e0830bba5248762bc95\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+356            android:authorities="com.example.cityguidy.com.squareup.picasso"
+356-->[com.squareup.picasso:picasso:2.71828] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1b9c88b2a9640e0830bba5248762bc95\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+357            android:exported="false" />
+357-->[com.squareup.picasso:picasso:2.71828] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\1b9c88b2a9640e0830bba5248762bc95\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+358
+359        <service
+359-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:28:9-31:45
+360            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+360-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:29:13-80
+361            android:enabled="false"
+361-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:30:13-36
+362            android:process=":leakcanary" />
+362-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:31:13-42
+363        <service
+363-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:32:9-34:39
+364            android:name="com.squareup.leakcanary.DisplayLeakService"
+364-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:33:13-70
+365            android:enabled="false" />
+365-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:34:13-36
+366
+367        <activity
+367-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:36:9-48:20
+368            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+368-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:37:13-80
+369            android:enabled="false"
+369-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:38:13-36
+370            android:icon="@drawable/__leak_canary_icon"
+370-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:39:13-56
+371            android:label="@string/__leak_canary_display_activity_label"
+371-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:40:13-73
+372            android:taskAffinity="com.squareup.leakcanary"
+372-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:41:13-59
+373            android:theme="@style/__LeakCanary.Base" >
+373-->[com.squareup.leakcanary:leakcanary-android:1.3.1] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\6809e9f96c003a9fc09773ebc4c41e71\jetified-leakcanary-android-1.3.1\AndroidManifest.xml:42:13-53
+374            <intent-filter>
+374-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:85:13-89:29
+375                <action android:name="android.intent.action.MAIN" />
+375-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:86:17-69
+375-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:86:25-66
+376
+377                <category android:name="android.intent.category.LAUNCHER" />
+377-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:88:17-77
+377-->C:\Users\jibre\Downloads\city guidy\app\src\main\AndroidManifest.xml:88:27-74
+378            </intent-filter>
+379        </activity>
+380        <activity
+380-->[com.sucho:placepicker:1.1.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\7a0e775284afb8033edf060ab71ce948\jetified-placepicker-1.1.2\AndroidManifest.xml:12:9-14:67
+381            android:name="com.sucho.placepicker.PlacePickerActivity"
+381-->[com.sucho:placepicker:1.1.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\7a0e775284afb8033edf060ab71ce948\jetified-placepicker-1.1.2\AndroidManifest.xml:13:13-69
+382            android:label="@string/title_activity_place_picker" />
+382-->[com.sucho:placepicker:1.1.2] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\7a0e775284afb8033edf060ab71ce948\jetified-placepicker-1.1.2\AndroidManifest.xml:14:13-64
+383
+384        <service
+384-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e3b5afb61c7d27b57094bed307c0c011\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+385            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+385-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e3b5afb61c7d27b57094bed307c0c011\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+386            android:exported="false" >
+386-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e3b5afb61c7d27b57094bed307c0c011\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+387            <meta-data
+387-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e3b5afb61c7d27b57094bed307c0c011\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+388                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+388-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e3b5afb61c7d27b57094bed307c0c011\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+389                android:value="cct" />
+389-->[com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\e3b5afb61c7d27b57094bed307c0c011\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+390        </service>
+391
+392        <provider
+392-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a7bf4c24e657d48371f713a257f5d361\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+393            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+393-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a7bf4c24e657d48371f713a257f5d361\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+394            android:authorities="com.example.cityguidy.lifecycle-process"
+394-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a7bf4c24e657d48371f713a257f5d361\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+395            android:exported="false"
+395-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a7bf4c24e657d48371f713a257f5d361\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+396            android:multiprocess="true" />
+396-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\a7bf4c24e657d48371f713a257f5d361\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+397
+398        <service
+398-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+399            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+399-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+400            android:exported="false"
+400-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+401            android:permission="android.permission.BIND_JOB_SERVICE" >
+401-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+402        </service>
+403
+404        <receiver
+404-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+405            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+405-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+406            android:exported="false" />
+406-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\jibre\.gradle\caches\transforms-2\files-2.1\52f48c73a874288e3b78f18ac402e7e6\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+407    </application>
+408
+409</manifest>
